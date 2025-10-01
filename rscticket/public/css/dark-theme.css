@@ -1,20 +1,17 @@
-/* public/css/theme-dark.css */
-
 /* ===============================
-   ðŸ“± Konsistensi Font di Semua Device
+   Konsistensi Font & Dark Theme
    =============================== */
 html {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
 }
-
 body {
-  font-size: 1rem;
+  font-size: 14px;
   background-color: #000c1c !important;
   color: #e5e7eb !important;
   margin: 0;
@@ -25,21 +22,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin: 0 0 0.5em;
-  line-height: 1.2;
+  line-height: 1.25;
   color: #f3f4f6 !important;
 }
-/* Heading tetap stabil */
-h1 { font-size: 32px !important; }
-h2 { font-size: 24px !important; }
-h3 { font-size: 20px !important; }
+h1 { font-size: 1.75rem !important; }
+h2 { font-size: 1.375rem !important; }
+h3 { font-size: 1.125rem !important; }
+h4 { font-size: 1rem !important; }
+h5 { font-size: 0.9375rem !important; }
+h6 { font-size: 0.875rem !important; }
+p, span, label { font-size: 14px; color: #d1d5db !important; }
 
-/* Text umum */
-p, span, label { font-size: 1rem; color: #d1d5db !important; }
 /* ===============================
-   ðŸŽ¨ Dark Theme Global Styling
+   Card Styling
    =============================== */
-
-/* Card */
 .card {
   background-color: #1f2937 !important; 
   color: #f3f4f6 !important;
@@ -54,14 +50,17 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
 .card-body,
 .fw-bold {
   color: #f3f4f6 !important;
+  font-size: 14px;
 }
 
-/* Input & Form */
+/* ===============================
+   Form & Input
+   =============================== */
 .form-control {
   background-color: #111827 !important;
   border: 1px solid #374151 !important;
   color: #f9fafb !important;
-  font-size: 1rem; /* konsisten */
+  font-size: 14px;
 }
 .form-control:focus {
   background-color: #1f2937 !important;
@@ -69,22 +68,21 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
   border-color: #f97316 !important;
   box-shadow: 0 0 0 0.25rem rgba(249,115,22,0.3) !important;
 }
+.form-control::placeholder {
+  color: #9ca3af !important;
+  opacity: 1;
+  font-size: 0.8rem;
+}
 
-/* Alert */
+/* ===============================
+   Alert
+   =============================== */
 .alert-danger {
   background-color: #dc2626 !important;
   border: none !important;
   color: #fff !important;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
 }
-.alert-warning {
-  background-color: #facc15 !important;
-  color: #111 !important;
-  border: none !important;
-  font-size: 0.95rem;
-}
-
-/* Floating Alert */
 #page-alert {
   position: fixed;
   top: -80px;
@@ -101,20 +99,9 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
   opacity: 1;
 }
 
-/* Placeholder text */
-.form-control::placeholder {
-  color: #9ca3af !important;
-  opacity: 1;
-  font-size: 0.95rem;
-}
-
-/* Animation */
-.fade-in { animation: fadeIn 0.3s ease-in-out; }
-.fade-out { animation: fadeOut 0.3s ease-in-out forwards; }
-@keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
-@keyframes fadeOut { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(0.95); } }
-
-/* ðŸ”˜ Tombol bulat */
+/* ===============================
+   Button Custom
+   =============================== */
 .btn-orange-circle {
   background: linear-gradient(to right, #f97316, #fbbf24);
   border: none;
@@ -126,14 +113,12 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
   align-items: center;
   justify-content: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  font-size: 1rem;
+  font-size: 14px;
 }
 .btn-orange-circle:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(249, 115, 22, 0.3);
 }
-
-/* ðŸ”¶ Tombol pill */
 .btn-orange-pill {
   background: linear-gradient(to right, #f97316, #fbbf24);
   border: none;
@@ -141,7 +126,7 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
   border-radius: 8px;
   padding: 8px 16px;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 14px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-orange-pill:hover {
@@ -149,55 +134,80 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
   box-shadow: 0 4px 8px rgba(249, 115, 22, 0.3);
 }
 
-.btn[disabled] {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-.trash-btn {
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-.trash-btn:hover {
-  background-color: #dc2626;
-  transform: scale(1.1);
-}
-
-/* Logo Gradient */
-.logo-gradient {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #f97316, #fbbf24);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  display: inline-block;
-  transition: opacity 0.3s ease;
-  font-size: 1.25rem;
-}
-.logo-gradient:hover {
-  opacity: 0.85;
-}
-
-/* ===============================
-   ðŸŽ¨ Custom Event Info
-   =============================== */
-
-/* Warna utama oranye */
-.text-orange {
-  color: #f97316 !important;
-}
-
-/* Tombol outline oranye */
+/* Tombol outline oranye kecil untuk modal ukuran */
 .btn-outline-orange {
   border: 1px solid #f97316 !important;
   color: #f97316 !important;
-  border-radius: 8px;
-  padding: 8px 16px;
-  font-size: 1rem;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  display: inline-block; /* biar menyamping */
+  margin: 4px;
   transition: all 0.2s ease;
 }
-.btn-outline-orange:hover {
+.btn-outline-orange:hover,
+.btn-outline-orange:focus,
+.btn-outline-orange:active {
   background: #f97316 !important;
   color: #fff !important;
+}
+
+/* Tombol Batal */
+.btn-cancel {
+  background-color: transparent;
+  color: #6c757d;
+  border: 2px solid #6c757d;
+  border-radius: 8px;
+  padding: 6px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.btn-cancel:hover {
+  background-color: #6c757d;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.btn-cancel:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 📌 Pastikan foto produk selalu kotak 1:1 */
+.product-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* bikin kotak */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.product-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* biar tetap proporsional & penuh */
+}
+
+
+/* ===============================
+   Custom Text
+   =============================== */
+.text-orange { color: #f97316 !important; }
+
+/* Judul produk di etalase → putih */
+.card-title {
+  color: #fff !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+
+/* Judul di deskripsi produk & harga → oranye */
+.card-body h6,
+.card-body .fw-bold.text-orange {
+  color: #f97316 !important;
+  font-weight: 600 !important;
 }
