@@ -1,7 +1,7 @@
 /* public/css/theme-dark.css */
 
 /* ===============================
-   📱 Konsistensi Font di Semua Device
+   ðŸ“± Konsistensi Font di Semua Device
    =============================== */
 html {
   -webkit-text-size-adjust: 100%;
@@ -32,10 +32,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 32px !important; }
 h2 { font-size: 24px !important; }
 h3 { font-size: 20px !important; }
+
 /* Text umum */
 p, span, label { font-size: 1rem; color: #d1d5db !important; }
 /* ===============================
-   🎨 Dark Theme Global Styling
+   ðŸŽ¨ Dark Theme Global Styling
    =============================== */
 
 /* Card */
@@ -113,7 +114,7 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
 @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
 @keyframes fadeOut { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(0.95); } }
 
-/* 🔘 Tombol bulat */
+/* ðŸ”˜ Tombol bulat */
 .btn-orange-circle {
   background: linear-gradient(to right, #f97316, #fbbf24);
   border: none;
@@ -132,7 +133,7 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
   box-shadow: 0 4px 8px rgba(249, 115, 22, 0.3);
 }
 
-/* 🔶 Tombol pill */
+/* ðŸ”¶ Tombol pill */
 .btn-orange-pill {
   background: linear-gradient(to right, #f97316, #fbbf24);
   border: none;
@@ -147,10 +148,12 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
   transform: scale(1.03);
   box-shadow: 0 4px 8px rgba(249, 115, 22, 0.3);
 }
+
 .btn[disabled] {
     opacity: 0.6;
     cursor: not-allowed;
 }
+
 .trash-btn {
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
@@ -158,39 +161,6 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
   background-color: #dc2626;
   transform: scale(1.1);
 }
-
-/* Tombol Batal */
-.btn-cancel {
-    background-color: transparent;
-    color: #6c757d; /* abu-abu */
-    border: 2px solid #6c757d;
-    border-radius: 8px; /* rounded-pill */
-    padding: 6px 20px;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
-
-.btn-cancel i {
-    vertical-align: middle;
-}
-
-/* Hover effect */
-.btn-cancel:hover {
-    background-color: #6c757d; /* fill abu-abu */
-    color: #fff;
-    text-decoration: none;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-/* Active / Clicked */
-.btn-cancel:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-
 
 /* Logo Gradient */
 .logo-gradient {
@@ -210,7 +180,7 @@ p, span, label { font-size: 1rem; color: #d1d5db !important; }
 }
 
 /* ===============================
-   🎨 Custom Event Info
+   ðŸŽ¨ Custom Event Info
    =============================== */
 
 /* Warna utama oranye */
